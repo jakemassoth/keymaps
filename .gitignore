@@ -3,3 +3,9 @@
 /zephyr
 /zmk
 /build
+
+
+# nix build stuff
+result
+zmk_left.uf2
+zmk_right.uf2
