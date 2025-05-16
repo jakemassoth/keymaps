@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -41,10 +42,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-           &kp Q        &kp W       &kp E       &kp R        &kp T      &kp Y    &kp U        &kp I       &kp O       &kp P
-           &mt LCTRL A  &mt LALT S  &mt LGUI D  &mt LSHFT F  &kp G      &kp H    &mt RSHFT J  &mt RGUI K  &mt RALT L  &mt RCTRL SEMI
-&kp GRAVE  &kp Z        &kp X       &kp C       &kp V        &kp B      &kp N    &kp M        &kp COMMA   &kp DOT     &kp FSLH        &kp SQT
-                                    &kp ESC     &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 BSPC   &kp BSPC
+           &kp Q        &kp W       &kp E       &kp R        &kp T        &kp Y    &kp U        &kp I       &kp O       &kp P
+           &mt LCTRL A  &mt LALT S  &mt LGUI D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RGUI K  &mt RALT L  &mt RCTRL SEMI
+&kp GRAVE  &kp Z        &kp X       &kp C       &kp V        &kp B        &kp N    &kp M        &kp COMMA   &kp DOT     &kp FSLH        &kp SQT
+                                    &kp ESC     &lt 1 SPACE  &lt 3 TAB    &kp RET  &lt 2 BSPC   &kp BSPC
             >;
         };
 
@@ -67,13 +68,13 @@
             >;
         };
 
-        adjust_layer {
-            label = "ADJ";
+        mouse_layer {
+            label = "MOUSE";
             bindings = <
-        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                 &trans        &trans  &trans    &trans  &trans  &trans
+        &sys_reset   &bt BT_CLR  &out OUT_TOG  &trans  &trans    &trans          &kp F7          &kp F8        &kp F9           &kp F12
+        &bootloader  &bt BT_NXT  &trans        &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp F11
+&trans  &trans       &bt BT_PRV  &trans        &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp F10  &trans
+                                 &trans        &trans  &trans    &mkp MB1        &mkp MB2        &mkp MB3
             >;
         };
 
