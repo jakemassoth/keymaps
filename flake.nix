@@ -38,7 +38,7 @@
           shield = "totem_%PART%";
 
           zephyrDepsHash =
-            "sha256-CV+AUBetseibTkuB9BJ6R9KLENMz/Or46/+liEjD/6s=";
+            "sha256-s+0zkWKjsnXqf6Cw/jZNdOrDsWpVVnlyTkPVGxXv5Kw=";
 
           meta = {
             description = "ZMK firmware";
