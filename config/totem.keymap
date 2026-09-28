@@ -61,9 +61,9 @@
         nav_layer {
             label = "NAVI";
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp LEFT  &kp DOWN    &kp UP_ARROW  &kp RIGHT        &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp F20   &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp KP_MULTIPLY  &trans
+        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC           &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp KP_PLUS
+        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp LEFT           &kp DOWN    &kp UP_ARROW  &kp RIGHT        &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp LC(LA(LSHFT))  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp KP_MULTIPLY  &trans
                                &trans    &trans     &trans      &mo 3     &kp KP_N0   &trans
             >;
         };
